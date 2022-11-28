@@ -6,10 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Routine</title>
+    <style>
+        td:hover{
+            float:center;
+            z-index: 10;
+            position:relative;
+            overflow: visible;
+            float: none;
+
+            color: yellow;
+            animation: ani 1s infinite;
+            animation-direction:reverse;
+
+            width: 200px;;
+            height: 25px;
+            /* display:inline-block; */
+        }
+        @keyframes ani{
+            0%{background-image: linear-gradient(blue, grey);}
+            50%{background-image: linear-gradient(grey, blue);}
+            100%{background-image: linear-gradient(blue, grey);}
+        }
+        body{
+            /* background-image: linear-gradient(#FFAA66, #AA6611); */
+            animation: bgani 2s infinite;
+            animation-direction: alternate-reverse;
+            background-blend-mode: lighten;
+        }
+        @keyframes bgani{
+            0%{background-color: #FFAA66;}
+            25%{background-color: #DD9944;}
+            50%{background-color: #FFAA66;}
+            100%{background-color: #DD9944;}
+            /* 50%{background-image: linear-gradient(#AA6611, #FFAA66);}
+            100%{background-image: linear-gradient(#FFAA66, #AA6611);} */
+        }
+        table{
+            opacity: 1;
+            animation: table-bgani 2s infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes table-bgani{
+            0%{background-color: #FFBB66;} 
+            25%{background-color: #FFCC88;} 
+            50%{background-color: #FFBB66;}
+            100%{background-color: #FFCC88;}
+    </style>
 </head>
 
 <body>
-    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+    <br><br><br><br><br><br><br><br>
+    <table border="1" cellpadding="10" cellspacing="0" width="90%" align="center">
         <caption>
             <h2>GANDAKI COLLEGE OF ENGINEERING AND SCIENCE</h2>
             <h4>BE SE 2nd, 3rd, 5th & 7th semester CLASS ROUTINE 2022 (Effective from 1st November 2022)</h4>
@@ -289,5 +336,6 @@
             <td></td>
         </tr>
     </table>
+    <br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>

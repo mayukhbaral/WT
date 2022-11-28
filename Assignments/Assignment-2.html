@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3 Schools</title>
+    <style>
+        ul {
+            font-family: sans-serif;
+            font-size: 17px;
+            font-weight: 549;
+            list-style-type: none;
+            margin: 0px;
+            padding: 12px;
+            padding-left: 12px;
+            padding-right: 16px;
+            overflow: hidden;
+            background-color: #D8D7D4;
+        }
+        /* FAF9F6 */
+        
+        li {
+            float: left;
+            margin: 0px;
+            /* padding: 5px; */
+        }
+
+        .float-right li {
+            font-size: 18px;
+            float: right;
+            box-sizing: border-box;
+            margin: 5px;
+            width: 140px;
+            border-radius: 25px;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            /* width: 60px; */
+            margin: 0px;
+            padding: 15px 16px;
+
+            text-align: center;
+            text-decoration: none;
+            overflow: visible;
+            /* background-color: aqua; */
+        }
+
+        .float-left a:hover:not(.home) {
+            background-color: #04AA6D;
+        }
+
+        .home {
+            background-color: #04AA6D;
+        }
+
+        .black {
+            margin: 0px;
+            padding: 0px;
+            padding-top: 50px;
+            padding-bottom: 150px;
+            background-color: #282A35;
+            text-align: center;
+        }
+
+        h1,
+        h3,
+        h4 {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: white;
+            margin-bottom: 0px;
+        }
+
+        h3 {
+            font-size: 23px;
+            font-weight: 700;
+            color: #FFC0C7;
+            margin: 30px;
+        }
+
+        h4 {
+            color: white;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        #search-bar {
+            width: 400px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            margin-top: 0px;
+            margin-right: 0px;
+            border: none;
+            border-radius: 25px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        .button {
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            text-align: center;
+            width: 80px;
+            margin: 0px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border-radius: 25px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav"></div>
+        <ul>
+            <div class="float-left">
+                <li> <a href="#home" class="home">Home</a> </li>
+                <li> <a href="">Tutorials</a> </li>
+                <li> <a href="">Refrences</a> </li>
+                <li> <a href="">Exercises</a> </li>
+                <li> <a href="">Videos</a> </li>
+            </div>
+            <div class="float-right">
+                <li style="background-color: #04AA6D;"> <a href="" style="color: white;">Log in</a> </li>
+                <li style="background-color:  rgb(224, 224, 100);"> <a href="">Free Website</a> </li>
+                <li style="background-color: pink;"> <a href="">Get Certified</a> </li>
+                <li style="background-color: #282A35;"> <a href="" style="color: white;">Upgrade</a> </li>
+            </div>
+        </ul>
+        </div>
+    </nav>
+    <div class="black">
+        <h1>Learn To Code</h1>
+        <h3>With the world's largest devloper site.</h3>
+        <form action="">
+            <input type="text" name="" id="search-bar" placeholder="Search our tutorials, e.g. HTML">
+            <button class="button">Search</button>
+        </form>
+        <h4>Not Sure Where To Begin With?</h4>
+    </div>
+</body>
+
+</html>
