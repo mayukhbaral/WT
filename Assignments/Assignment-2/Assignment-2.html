@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3 Schools</title>
     <style>
+        body{
+            margin: 0px;
+        }
         ul {
             font-family: sans-serif;
             font-size: 17px;
             font-weight: 549;
+            height: 90px;
             list-style-type: none;
             margin: 0px;
-            padding: 12px;
+            /* padding: 12px; */
             padding-left: 12px;
             padding-right: 16px;
             overflow: hidden;
@@ -22,26 +26,21 @@
         /* FAF9F6 */
         
         li {
-            float: left;
-            margin: 0px;
+            /* float: left; */
+            /* margin: 0px; */
+            /* height: 20px; */
             /* padding: 5px; */
-        }
+        }  
 
-        .float-right li {
-            font-size: 18px;
-            float: right;
-            box-sizing: border-box;
-            margin: 5px;
-            width: 140px;
-            border-radius: 25px;
-        }
 
         li a {
             display: block;
+            float: left;
             color: black;
             /* width: 60px; */
-            margin: 0px;
+            margin-top: 20px;
             padding: 15px 16px;
+            /* height: 50px; */
 
             text-align: center;
             text-decoration: none;
@@ -49,12 +48,39 @@
             /* background-color: aqua; */
         }
 
+        .float-right li {
+            font-size: 18px;
+            float: right;
+            text-align: center;
+            box-sizing: border-box;
+            margin: 5px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 50px;
+            width: 140px;
+            height: 60px;
+            border-radius: 25px;
+            overflow: visible;
+        }
+        .float-right a{
+            float: right;
+            margin-right: 0px;
+            margin-top: 5px;
+        }
+
         .float-left a:hover:not(.home) {
             background-color: #04AA6D;
+            margin-top: 0px;
+            padding-top: 36px;
+            /* padding-bottom: 36px; */
+            height: 60px;
         }
 
         .home {
             background-color: #04AA6D;
+            height: 60px;
+            margin-top: 0px;
+            padding-top: 36px;
         }
 
         .black {
@@ -135,10 +161,10 @@
                 <li> <a href="">Videos</a> </li>
             </div>
             <div class="float-right">
-                <li style="background-color: #04AA6D;"> <a href="" style="color: white;">Log in</a> </li>
+                <li style="background-color: #04AA6D; width:max-content;"> <a href="" style="color: white;">Log in</a> </li>
                 <li style="background-color:  rgb(224, 224, 100);"> <a href="">Free Website</a> </li>
                 <li style="background-color: pink;"> <a href="">Get Certified</a> </li>
-                <li style="background-color: #282A35;"> <a href="" style="color: white;">Upgrade</a> </li>
+                <li style="background-color: #282A35; width: fit-content;"> <a href="" style="color: white;">Upgrade</a> </li>
             </div>
         </ul>
         </div>
