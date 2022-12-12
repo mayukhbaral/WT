@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* BOXES */
+        .box-1 {
+            /* width: 500px; */
+            /* height: 500px; */
+            border: 2px solid lightgreen;
+            margin: auto;
+            position: relative;
+            animation: box-margin1 .5s linear infinite alternate-reverse ;
+        }
+        @keyframes box-margin1{
+            0%{
+                width: 600px;
+                height: 600px;
+                top: 0px;
+            }
+            50%{
+                width: 550px;
+                height: 550px;
+                top: 50px;
+            }
+            100%{
+                width: 500px;
+                height: 500px;
+                top: 100px;
+            }
+        }
+
+        .box-2 {
+            /* width: 400px; */
+            /* height: 400px; */
+            border: 2px solid blue;
+            margin: auto;
+            position: relative;
+            animation: box-margin2 .5s linear infinite alternate-reverse ;
+        }
+        @keyframes box-margin2{
+            0%{
+                width: 400px;
+                height: 400px;
+                top: 100px;
+            }
+            50%{
+                width: 450px;
+                height: 450px;
+                top: 50px;
+            }
+            100%{
+                width: 500px;
+                height: 500px;
+                top: 0px;
+            }
+        }
+
+        .box-3 {
+            /* width: 300px; */
+            /* height: 300px; */
+            border: 2px solid yellow;
+            margin: auto;
+            position: relative;
+            animation: box-margin3 .5s linear infinite alternate-reverse ;
+        }
+        @keyframes box-margin3{
+            0%{
+                width: 400px;
+                height: 400px;
+                top: 0px;
+            }
+            50%{
+                width: 350px;
+                height: 350px;
+                top: 50px;
+            }
+            100%{
+                width: 300px;
+                height: 300px;
+                top: 100px;
+            }
+        }
+
+        .box-4 {
+            /* width: 200px; */
+            /* height: 200px; */
+            border: 2px solid green;
+            margin: auto;
+            position: relative;
+            animation: box-margin4 .5s linear infinite alternate-reverse ;
+        }
+        @keyframes box-margin4{
+            0%{
+                width: 200px;
+                height: 200px;
+                top: 100px;
+            }
+            50%{
+                width: 250px;
+                height: 250px;
+                top: 50px;
+            }
+            100%{
+                width: 300px;
+                height: 300px;
+                top: 0px;
+            }
+        }
+
+        /* BALLS */
+        .ball {
+            display: inline-block;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            font-size: 55px;
+            line-height: 30px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            padding: 0px;
+            animation: move .1s infinite linear;
+        }
+
+        @keyframes move{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .ball-1 {
+            top: 0px;
+            left: 0px;
+            background-color: hotpink;
+        }
+
+        .ball-2 {
+            top: 0px;
+            right: 0px;
+            background-color: cadetblue;
+        }
+
+        .ball-3 {
+            bottom: 0px;
+            left: 0px;
+            background-color: brown;
+        }
+
+        .ball-4 {
+            bottom: 0px;
+            right: 0px;
+            background-color: mediumorchid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball-2 ball">+</div>
+    <div class="ball-3 ball">+</div>
+    <div class="ball-1 ball">+</div>
+    <div class="ball-4 ball">+</div>
+
+    <div class="box-1">
+        <div class="ball-2 ball">+</div>
+        <div class="ball-3 ball">+</div>
+        <div class="ball-1 ball">+</div>
+        <div class="ball-4 ball">+</div>
+
+        <div class="box-2">
+            <div class="ball-1 ball">+</div>
+            <div class="ball-2 ball">+</div>
+            <div class="ball-3 ball">+</div>
+            <div class="ball-4 ball">+</div>
+
+            <div class="box-3">
+                <div class="ball-1 ball">+</div>
+                <div class="ball-2 ball">+</div>
+                <div class="ball-3 ball">+</div>
+                <div class="ball-4 ball">+</div>
+
+                <div class="box-4">
+                    <div class="ball-1 ball">+</div>
+                    <div class="ball-2 ball">+</div>
+                    <div class="ball-3 ball">+</div>
+                    <div class="ball-4 ball">+</div>
+
+                    <div class="box-5">
+                        <div class="ball-1 ball">+</div>
+                        <div class="ball-2 ball">+</div>
+                        <div class="ball-3 ball">+</div>
+                        <div class="ball-4 ball">+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
