@@ -312,6 +312,35 @@
             /* z-index: 10; */
             height: 100vh;
             position: absolute;
+            background-color: aqua;
+            animation: ani-text-over-image 8s infinite normal;
+            background-size: 100vw 100vh;
+        }
+        @keyframes ani-text-over-image {
+            0%{
+                background-image: url(./Images/microprocessor-1.jpg);
+            }
+            20%{
+                background-image: url(./Images/microprocessor-1.jpg);
+            }
+            30%{
+                background-image: url(./Images/microprocessor-2.jpg);
+            }
+            45%{
+                background-image: url(./Images/microprocessor-2.jpg);
+            }
+            55%{
+                background-image: url(./Images/microprocessor-3.jpg);
+            }
+            70%{
+                background-image: url(./Images/microprocessor-3.jpg);
+            }
+            80%{
+                background-image: url(./Images/microprocessor-5.jpg);
+            }
+            100%{
+                background-image: url(./Images/microprocessor-5.jpg);
+            }
         }
 
         .text-over-image img {
@@ -522,7 +551,7 @@
 
         </div>
         <div class="text-over-image">
-            <img src="./Images/microprocessor-5.jpg" alt="">
+            <!-- <img src="./Images/microprocessor-5.jpg" alt=""> -->
             <h4>Gandaki College of Engineering and Science offers career-oriented programs for motivated students who
                 seek academic excellence, personal growth, and professional success.</h4>
             <div class="three-circles">
