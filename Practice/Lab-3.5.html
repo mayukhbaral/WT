@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Array</title>
+</head>
+
+<body>
+    Sort Array
+
+     <script>
+        arr = [5, 4, 8, 6, 10];
+
+        function sort(x) {
+            let y = [];
+            x.forEach(function cmp(el, index1, array) {
+                x.forEach(function cmp2(el2, index2, array2){
+                    console.log("El: " + el);
+                    console.log("Index of El: " + index1);
+                    console.log("El2: " + el2);
+                    console.log("Index of El2: " + index2);
+                    if (el<el2)
+                    {
+                        y[index1]=el;
+                        console.log(`${el} is smaller than ${el2}`);
+                        console.log("Y[" + index1 +"] : " + el) + "\n\n";
+                    }
+                    else if (el>el2)
+                    {
+                        y[index1]=el2;
+                        console.log(`${el2} is smaller than ${el}`);
+                        console.log("Y[" + index1 +"] : " + el2 + "\n\n");
+                    }
+                    else if (el == el2)
+                    {
+
+                    }
+                    else{
+
+                    }
+                })
+                console.log("\n\n\n\n\n\n\n");
+            });
+            console.log(y);
+        }
+        sort(arr);
+    </script>
+</body>
+
+</html>

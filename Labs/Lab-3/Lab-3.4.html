@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Array</title>
+</head>
+
+<body>
+    Reverse Array
+    
+    <script>
+        let arr = ["a", "b", 1, 2, 3];
+
+        function reverse(x) {
+            let y = [];
+            for (let i = 0; i < x.length; i++) {
+                y[i] = x[x.length - i - 1]
+            }
+            return y;
+        }
+
+        console.log("Initial Array is: " + arr);
+        console.log("Reversed Array is: " + reverse(arr));
+    </script>
+</body>
+
+</html>
