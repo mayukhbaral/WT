@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stacking</title>
+</head>
+<body>
+	<div class="box1" onclick="stacking('box1', 'box2', 'box3')"><img src="./Images/card1.png" alt=""></div>
+	<div class="box2" onclick="stacking('box2', 'box1', 'box3')"><img src="./Images/card2.png" alt=""></div>
+	<div class="box3" onclick="stacking('box3', 'box1', 'box2')"><img src="./Images/card3.png" alt=""></div>
+</body>
+
+<script type="text/javascript">
+    function stacking(class1, class2, class3)
+    {
+        document.getElementsByClassName(class1)[0].style.zIndex = "10";
+        document.getElementsByClassName(class2)[0].style.zIndex = "0";
+        document.getElementsByClassName(class3)[0].style.zIndex = "0";
+    }
+
+    let divs = document.querySelectorAll("div");
+    for (let i = 0; i < divs.length; i++) {
+        document.querySelectorAll('div')[i].style.width = 'fit-content';
+        document.querySelectorAll('div')[i].style.height = 'fit-content';
+        document.querySelectorAll('div')[i].style.boxShadow = '2px 2px 16px 4px black';
+        document.querySelectorAll('div')[i].style.cursor = 'pointer';
+    }
+
+    document.getElementsByClassName('box1')[0].style.position='relative';
+    document.getElementsByClassName('box2')[0].style.position='absolute';
+    document.getElementsByClassName('box2')[0].style.top='50px';
+    document.getElementsByClassName('box2')[0].style.left='50px';
+    document.getElementsByClassName('box3')[0].style.position='absolute';
+    document.getElementsByClassName('box3')[0].style.top='100px';
+    document.getElementsByClassName('box3')[0].style.left='100px';
+
+</script>
+
+</html>

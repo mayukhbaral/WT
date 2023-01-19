@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial of the Number</title>
+    <style>
+    body {
+        background-color: rgb(144, 187, 223);
+      }
+      #hello {
+        position: absolute;
+        top: 100px;
+        left: 500px;
+      }
+      #result {
+        color: rgb(2, 16, 36);
+        position: absolute;
+        top: 150px;
+        left: 400px;
+      }
+      #more {
+        color: rgb(11, 65, 11);
+        position: absolute;
+        top: 200px;
+        left: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="hello">Get result</button>
+    <h1 id="result"></h1>
+    <h2 id="more"></h2>
+    <script>
+      let num = 0,
+        fact = 0;
+      num = prompt("Enter a number:");
+         fact = 1;
+      for (let i = num; i > 0; i--) {
+        fact *= i;
+      }
+      document.getElementById("hello").addEventListener("click", () => {
+        document.getElementById("result").textContent =
+          "The factorial is:- " + fact;
+        document.getElementById("more").textContent =
+          "Refresh to enter again";
+      });
+    </script>
+  </body>
+</html>
